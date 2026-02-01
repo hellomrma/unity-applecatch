@@ -12,6 +12,7 @@ public class BasketController : MonoBehaviour
     public AudioClip appleSound;
     public AudioClip bombSound;
     AudioSource audioSource;
+    public GameObject gameManager;
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -48,10 +49,13 @@ public class BasketController : MonoBehaviour
         if (other.gameObject.CompareTag("Apple"))
         {
             audioSource.PlayOneShot(appleSound);
+            gameManager.GetComponent<GameManager>().GetApple();
+            
         }
         else
         {
             audioSource.PlayOneShot(bombSound);
+            gameManager.GetComponent<GameManager>().GetBomb();
         }
         Destroy(other.gameObject);
     }
