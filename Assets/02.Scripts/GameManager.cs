@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public Text timerText;
     public Text pointText;
-    float time = 60.0f;
+    float time = 30.0f;
     int point = 0;
 
     public void GetApple() {
