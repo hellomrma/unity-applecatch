@@ -168,6 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 936370950}
   pointText: {fileID: 1404899384}
+  generator: {fileID: 1939606304}
 --- !u!1 &719780711
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,6 +529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 0}
   pointText: {fileID: 0}
+  generator: {fileID: 0}
 --- !u!1001 &1211054063
 PrefabInstance:
   m_ObjectHideFlags: 0
